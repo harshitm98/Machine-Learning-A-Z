@@ -90,4 +90,4 @@ def backwardElimination(x, sl):
  
 SL = 0.05
 X_opt = X[:, [0, 1, 2, 3, 4, 5]]
-X_Modeled = backwardElimination(X_opt, SL)
+X_Modeled = backwardElimination(X_opt, SL)  
