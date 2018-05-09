@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun May  6 14:33:34 2018
-
-@author: Harshit Maheshwari
-"""
+# Classification template
 
 # Importing the libraries
 import numpy as np
@@ -26,10 +21,7 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
 # Fitting classifier to the Training set
-from sklearn.neighbors import KNeighborsClassifier
-classifier = KNeighborsClassifier(n_neighbors = 5, metric = 'minkowski', p = 2)
-classifier.fit(X_train, y_train)
-
+# Create your classifier here
 
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)
