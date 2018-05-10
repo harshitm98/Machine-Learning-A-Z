@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue May  8 21:14:51 2018
+Created on Wed May  9 23:59:42 2018
 
 @author: Harshit Maheshwari
 """
-
-# SVM
 
 # Classification template
 
@@ -31,7 +29,7 @@ X_test = sc.transform(X_test)
 
 # Fitting classifier to the Training set
 from sklearn.svm import SVC
-classifier = SVC(kernel = 'linear', random_state = 0)
+classifier = SVC(kernel = 'rbf', random_state = 0)
 classifier.fit(X_train, y_train)
 
 # Predicting the Test set results
