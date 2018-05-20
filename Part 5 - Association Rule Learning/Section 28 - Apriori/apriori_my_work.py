@@ -32,4 +32,4 @@ def display_top_products(results, n_products=5):
         lift = round(result.ordered_statistics[0].lift, 2)
         products = " + ".join(list(result.items))
         print("{0}%\t{1}\t{2}\t{3}".format(support, confidence, lift, products))
-display_top_products(results, 30)
+display_top_products(results, 20)
